@@ -1,0 +1,14 @@
+D:\Document\SQL Server Management Studio\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.Common\bin\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.Common.deps.json
+D:\Document\SQL Server Management Studio\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.Common\bin\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.Common.dll
+D:\Document\SQL Server Management Studio\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.Common\obj\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.Common.csprojAssemblyReference.cache
+D:\Document\SQL Server Management Studio\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.Common\obj\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.Common.AssemblyInfoInputs.cache
+D:\Document\SQL Server Management Studio\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.Common\obj\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.Common.AssemblyInfo.cs
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.Common\bin\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.Common.deps.json
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.Common\bin\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.Common.dll
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.Common\bin\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.Common.pdb
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.Common\obj\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.Common.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.Common\obj\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.Common.AssemblyInfo.cs
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.Common\obj\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.Common.dll
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.Common\obj\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.Common.pdb
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.Common\obj\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.Common.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.Common\obj\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.Common.csproj.CoreCompileInputs.cache

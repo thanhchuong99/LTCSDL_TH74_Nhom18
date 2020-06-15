@@ -1,0 +1,22 @@
+<h1 id="tableLabel">Sở Giáo Dục</h1>
+<p *ngIf="!SoGDs"><em>Loading...</em></p>
+<div class="search-sogd">
+  <input class="form-control" type="text" name="search" [(ngModel)]="keyword" autocomplete="off" placeholder="Start searching for a Sở Giáo Dục by id or name">
+</div>
+<table  class='table table-striped' aria-labelledby="tableLabel" *ngIf="SoGDs.totalRecord > 0">
+    <thead>
+        <tr>
+            <th>Mã sở giáo dục</th>                                    
+            <th>Tên sở giáo dục</th>
+        </tr>
+    </thead>
+  <tbody>
+    <tr *ngFor="let s of SoGDs.data | filter:keyword | paginate: { itemsPerPage: 9 , currentPage: p }">
+      <td><a [routerLink]="['/thisinh',s.maSoGd]">{{ s.maSoGd }}</a></td>
+      <td >{{ s.tenSoGd }}</td>  
+    </tr>
+  </tbody>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</table>
+<div style="padding-bottom: 10%;"></div>
+

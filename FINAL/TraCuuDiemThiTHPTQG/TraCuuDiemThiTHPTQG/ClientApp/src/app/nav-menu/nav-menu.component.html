@@ -1,0 +1,34 @@
+<mat-toolbar color="primary" class="app-header">
+  <span *ngIf="isUserAuthenticated()" class="nav-tool-items">
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon>list</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button routerLink="" routerLinkActive="active" mat-menu-item>
+        <mat-icon>home</mat-icon>
+        <span class="span-menu">Home</span>
+      </button>
+      <button  routerLink="sogd" routerLinkActive="active" mat-menu-item >
+        <mat-icon>school</mat-icon>
+        <span class="span-menu">Quản lí sở giáo dục</span>
+      </button>
+      <button routerLink="thisinh" routerLinkActive="active" mat-menu-item>
+        <mat-icon>person</mat-icon>
+        <span class="span-menu">Quản lí thí sinh</span>
+      </button>
+      <button routerLink="diem" routerLinkActive="active" mat-menu-item>
+        <mat-icon>grade</mat-icon>
+        <span class="span-menu">Quản lí điểm</span>
+      </button>
+    </mat-menu>
+  </span>
+  
+    <div ><img  width="100px" height="80px" src="assets/img/logo.png" alt="" /><a href="/" target="_self" class="positronx">Tra cứu điểm thi THPTQG</a></div>
+  <span class="nav-tool-items">
+    <a mat-button mat-raised-button routerLink="login"*ngIf="!isUserAuthenticated()" routerLinkActive="active">Log in</a>
+    <a mat-button mat-raised-button routerLink="/" routerLinkActive="active"  *ngIf="isUserAuthenticated()"  (click) = "logOut()">Log out</a>
+  </span>
+  
+</mat-toolbar>
+
+<router-outlet></router-outlet>

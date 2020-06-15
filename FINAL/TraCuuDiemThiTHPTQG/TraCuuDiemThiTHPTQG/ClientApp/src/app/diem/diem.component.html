@@ -1,0 +1,99 @@
+<h1 id="tableLabel">Điểm </h1>
+<p *ngIf="!diems"><em>Loading...</em></p>
+<div class="search-thisinh">
+  <input class="form-control" type="text" name="search" [(ngModel)]="keyword" autocomplete="off" placeholder="Start searching for a Diem by id or name">
+</div>
+<div *ngIf="isDelete">
+<button style="margin: 5px;"class="btn btn-primary" (click)="openModal(true,null)">Add new ThiSinh</button>
+</div>
+<h2 *ngIf="isDelete">Chưa có dữ liệu... </h2>
+<div *ngIf="!isDelete">
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="diems.totalRecord > 0">
+    <thead>
+        <tr>
+            <th>Số Báo Danh</th>                                    
+            <th>Điểm Toán</th>
+            <th>Điểm Văn</th>
+            <th>Điểm Ngoại Ngữ</th>
+            <th *ngIf="khoithi">Điểm Hoá</th>
+            <th *ngIf="khoithi">Điểm Lý</th>
+            <th *ngIf="khoithi">Điểm Sinh</th>
+            <th *ngIf="!khoithi">Điểm Địa</th>
+            <th *ngIf="!khoithi">Điểm Sử</th>
+            <th *ngIf="!khoithi">Điểm GDCD</th>
+        </tr>
+    </thead>
+  <tbody>
+    <tr *ngFor="let s of diems.data | filter:keyword | paginate: { itemsPerPage: 5 , currentPage: p }">
+      <td>{{ s.soBaoDanh }}</td>
+      <td>{{ s.diemToan }}</td>  
+      <td>{{ s.diemVan }}</td>  
+      <td>{{ s.diemNgoaiNgu}}</td>  
+      <td *ngIf="khoithi">{{ s.diemHoa }}</td>  
+      <td *ngIf="khoithi">{{ s.diemLy }}</td>  
+      <td *ngIf="khoithi">{{ s.diemSinh }}</td> 
+      <td *ngIf="!khoithi">{{ s.diemDia }}</td>  
+      <td *ngIf="!khoithi">{{ s.diemSu }}</td>  
+      <td *ngIf="!khoithi">{{ s.diemGdcd }}</td>   
+      <td>
+        <button style="margin-right: 5px;" class="btn btn-info btm-sm" (click)="openModal(false,s)">Edit</button>
+        <button class="btn btn-danger btm-sm"  (click)="deleteDiem(s.soBaoDanh)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</table>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" *ngIf="!isEdit">Add new Diem</h5>
+          <h5 class="modal-title" id="exampleModalLabel" *ngIf="isEdit">Edit Diem</h5>
+        </div>
+        <div class="modal-body">
+        <div class="row" >
+        <div class="col-4">Số Báo Danh</div>
+        <div class="col-8"><input class="form-control" readonly [(ngModel)]="diem.soBaoDanh"><div  class="help-block" *ngIf="!test">*Số báo danh đã tồn tại hoặc không đúng</div></div>
+        </div>
+        <br/>
+        <div class="row">
+        <div class="col-2">Điểm Toán</div>
+        <div class="col-4"><input class="form-control" type="number" [(ngModel)]="diem.diemToan"></div>
+        <div class="col-2">Điểm Văn</div>
+        <div class="col-4"><input class="form-control" type="number"[(ngModel)]="diem.diemVan"></div>
+        </div>
+        <br/>
+        <div class="row">
+        <div class="col-2">Điểm Ngoại Ngữ</div>
+        <div class="col-4"><input class="form-control" type="number" [(ngModel)]="diem.diemNgoaiNgu"></div>
+        <div class="col-2" *ngIf="khoithi">Điểm Hoá</div>
+        <div class="col-4" *ngIf="khoithi"><input class="form-control" type="number"[(ngModel)]="diem.diemHoa"></div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-2" *ngIf="khoithi">Điểm Lý</div>
+          <div class="col-4" *ngIf="khoithi"><input class="form-control"type="number"  [(ngModel)]="diem.diemLy"></div>
+          <div class="col-2" *ngIf="khoithi">Điểm Sinh</div>
+          <div class="col-4" *ngIf="khoithi"><input class="form-control"type="number" [(ngModel)]="diem.diemSinh"></div>
+        </div>
+        <br/>
+          <div class="row">
+            <div class="col-2" *ngIf="!khoithi">Điểm Sử</div>
+            <div class="col-4"*ngIf="!khoithi"><input class="form-control" type="number" [(ngModel)]="diem.diemSu"></div>
+            <div class="col-2"*ngIf="!khoithi">Điểm Địa</div>
+            <div class="col-4"*ngIf="!khoithi"><input class="form-control"type="number" [(ngModel)]="diem.diemDia"></div>
+            </div>
+            <br/>
+            <div class="row">
+              <div class="col-2"*ngIf="!khoithi">Điểm GDCD</div>
+              <div class="col-4"*ngIf="!khoithi"><input class="form-control" type="number" [(ngModel)]="diem.diemGdcd"></div>
+              </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="searchDiem()">Close</button>
+          <button type="button" class="btn btn-primary" *ngIf="isEdit" (click)="updateDiem()">Save</button>
+          <button type="button" class="btn btn-success" *ngIf="!isEdit" (click)="addDiem()">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>

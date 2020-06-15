@@ -1,0 +1,122 @@
+<div style="display: block; padding-top: 80px;"></div>
+<div class="container">
+<div class="row">
+  <div class="col-md-12">
+      <h2 class="m-header-text text-center">TRA CỨU ĐIỂM THI THPT QUỐC GIA 2020</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-4" style="padding-top: 10px">
+        <div class="input-group">
+          <span class="input-group-addon" id="sizing-addon2">Số báo danh</span>
+          <input class="form-control" type="text" name="search" id="Code" style="width:191px" [(ngModel)]="diem.keyword" autocomplete="off" placeholder="Nhập SBD để nhận tư vấn">
+          
+            <a mat-button mat-raised-button class="input-group-addon" style="width:1%; height:34px;" (click)="searchDiembySBD()">Tra cứu</a>
+        
+        </div>
+    </div>
+    <div class="col-md-4" style="padding-top: 10px!important">
+      <span class="hidden-xs hidden-sm glyphicon glyphicon-resize-horizontal" style="position: absolute;left: -6px;top: 20px;"></span>
+      <div class="input-group">
+        <span class="input-group-addon" id="sizing-addon2">Top100</span>
+          <span class="input-group-addon">Môn</span>
+          <select class="form-control" [(ngModel)]="this.mon" >
+            <option  value="1" >Toán</option>
+            <option value="2">Ngoại Ngữ</option>
+            <option value="3">Ngữ Văn</option>
+            <option  value="4" >Hoá</option>
+            <option  value="5" >Vật Lý</option>
+            <option  value="6" >Sinh Học</option>
+            <option  value="7" >KHTN</option>
+            <option  value="8" >Lịch Sử</option>
+            <option  value="9" >Địa Lý</option>
+            <option  value="10" >GDCD</option>
+            <option  value="11" >KHXH</option>
+          </select>
+          <a mat-button mat-raised-button class="input-group-addon" style="width:1%; height:34px;" (click)="top100(this.mon)" (click)="per100()">Xem</a>
+      </div>
+  </div>
+
+  </div>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+      <div id="search_result">
+          <h3></h3>
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="table-responsive">
+                      <table class="table table-bordered">
+                          <thead>
+                              <tr>
+                                  <th rowspan="2">#</th>
+                                  <th rowspan="2">Số báo danh</th>                                    
+                                  <th rowspan="2">Toán</th>
+                                  <th rowspan="2">Ngữ văn</th>
+                                  <th rowspan="2">Ngoại ngữ</th>
+                                  <th colspan="4">Bài khoa học tự nhiên</th>
+                                  <th colspan="4">Bài khoa học Xã hội</th>
+                              </tr>
+                              <tr>
+                                  <th>Vật lý</th>
+                                  <th>Hóa học</th>
+                                  <th>Sinh học</th>
+                                  <th style="background: #0067b8;color: #ffffff">Điểm KHTN</th>
+                                  <th>Lịch sử</th>
+                                  <th>Địa lý</th>
+                                  <th>GDCD</th>
+                                  <th style="background: #0067b8;color: #ffffff">Điểm KHXH</th>
+                              </tr>
+                          </thead>
+                          <tbody *ngIf="this.read">
+                              <tr *ngIf="this.notfound"><td colspan="14" style="text-align:center">CHƯA CÓ DỮ LIỆU</td>
+                              </tr>
+                            <tr *ngIf="!this.notfound">
+                              <td>1</td>
+                              <td >{{ res.soBaoDanh }}</td>
+                              <td>{{ res.diemToan }}</td>
+                              <td >{{ res.diemVan }}</td>
+                              <td >{{ res.diemNgoaiNgu }}</td>
+                              <td >{{ res.diemLy }}</td>
+                              <td >{{ res.diemHoa }}</td>
+                              <td >{{ res.diemSinh }}</td>
+                              <td >{{ res.diemKHTN }}</td>
+                              <td >{{ res.diemSu }}</td>
+                              <td >{{ res.diemDia }}</td>
+                              <td >{{ res.diemGdcd }}</td>
+                              <td >{{ res.diemKHXH }}</td>
+                            </tr>
+                          </tbody>
+                          <tbody *ngIf="this.read2">
+                            <tr *ngIf="this.notfound"><td colspan="14" style="text-align:center">CHƯA CÓ DỮ LIỆU</td>
+                            </tr>
+                          <tr  *ngFor="let s of diems.data">
+                            <td>{{s.index}}</td>
+                            <td >{{ s.soBaoDanh }}</td>
+                            <td>{{ s.diemToan }}</td>
+                            <td >{{ s.diemVan }}</td>
+                            <td >{{ s.diemNgoaiNgu }}</td>
+                            <td >{{ s.diemLy  }}</td>
+                            <td >{{ s.diemHoa }}</td>
+                            <td >{{ s.diemSinh }}</td>
+                            <td >{{ s.diemKHTN }}</td>
+                            <td >{{ s.diemSu }}</td>
+                            <td >{{ s.diemDia }}</td>
+                            <td >{{ s.diemGdcd }}</td>
+                            <td >{{ s.diemKHXH }}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div *ngIf="this.read2" class="h1">TỶ LỆ THÍ SINH TOP 100 TOÀN QUỐC THEO CỤM THI - MÔN  TOÁN</div>
+                      <div  style="width:100%;padding-bottom: 10%;"><canvas  id="canvas"  width="700" height="300"style="padding:10px" #canvas></canvas></div>
+                  </div>
+              </div>
+          
+          </div>
+       
+      </div>
+      
+               

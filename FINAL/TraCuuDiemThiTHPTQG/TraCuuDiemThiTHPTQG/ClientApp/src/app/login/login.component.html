@@ -1,0 +1,27 @@
+<body>
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: center; align-items: center;">
+
+  <mat-card class="box mat-card">
+    <mat-card-header>
+      <mat-card-title>Log in</mat-card-title>
+      <div *ngIf="invalidLogin" class="alert alert-danger">Invalid username or password.</div>
+      <br/>
+    </mat-card-header>
+
+    <form class="example-form" #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+      <mat-card-content>
+        <mat-form-field class="example-full-width">
+          <input type="username" id="username" name="username" ngModel class="form-control" matInput placeholder="Username">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input type="password" id="password" name="password" ngModel class="form-control" matInput placeholder="Password">
+        </mat-form-field>
+      </mat-card-content>
+      <button mat-stroked-button color="accent" class="btn-block">Log in</button>
+    </form>
+  </mat-card>
+
+</div>
+</body>
+<router-outlet></router-outlet>

@@ -1,0 +1,156 @@
+<h1 id="tableLabel">Thí sinh</h1>
+<p *ngIf="!thisinhs"><em>Loading...</em></p>
+<div class="search-thisinh">
+  <input class="form-control" type="text" name="search" [(ngModel)]="keyword" autocomplete="off" placeholder="Start searching for a thisinh by id or name">
+</div>
+<button style="margin: 5px;"class="btn btn-primary" (click)="openModal(true,null)">Add new ThiSinh</button>
+<h2 *ngIf="isDelete">Chưa có dữ liệu... </h2>
+<div *ngIf="!isDelete">
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="thisinhs.totalRecord > 0">
+    <thead>
+        <tr>
+            <th>Số Báo Danh</th>                                    
+            <th>Họ</th>
+            <th>Tên</th>
+            <th>Ngày Sinh</th>
+            <th>Quê Quán</th>
+            <th>Giới Tính</th>
+            <th>Khối Thi</th>
+            <th></th>
+        </tr>
+    </thead>
+  <tbody>
+    <tr *ngFor="let s of thisinhs.data | filter:keyword | paginate: { itemsPerPage: 5 , currentPage: p }">
+      <td><a [routerLink]="['/diem',s.soBaoDanh,s.khoiThi]">{{ s.soBaoDanh }}</a></td>
+      <td>{{ s.ho }}</td>  
+      <td>{{ s.ten }}</td>  
+      <td>{{ s.ngaySinh |date:'yyyy-MM-dd' }}</td>  
+      <td>{{ s.queQuan }}</td>  
+      <td>{{ s.gioiTinh }}</td>  
+      <td>{{ s.khoiThi }}</td>  
+      <td>
+        <button style="margin-right: 5px;" class="btn btn-info btm-sm" (click)="openModal(false,s)">Edit</button>
+        <button class="btn btn-danger btm-sm"  (click)="deleteThisinh(s.soBaoDanh)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</table>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" *ngIf="!isEdit">Add new ThiSinh</h5>
+          <h5 class="modal-title" id="exampleModalLabel" *ngIf="isEdit">Edit ThiSinh</h5>
+        </div>
+        <div class="modal-body">
+        <div class="row" *ngIf="!isEdit">
+        <div class="col-4">Số Báo Danh</div>
+        <div class="col-8"><input class="form-control" [(ngModel)]="thisinh.soBaoDanh">
+        <span *ngIf="invalid" class="help-block">*Số báo danh đã tồn tại hoặc sai.</span></div>
+        </div>
+        <br/>
+        <div class="row">
+        <div class="col-2">Họ</div>
+        <div class="col-4"><input class="form-control" [(ngModel)]="thisinh.ho">
+        <span *ngIf="invalid" class="help-block">*Required.</span></div>
+        <div class="col-2">Tên</div>
+        <div class="col-4"><input class="form-control" [(ngModel)]="thisinh.ten">
+        <span *ngIf="invalid" class="help-block">*Required.</span></div>
+        </div>
+        <br/>
+        <div class="row">
+        <div class="col-2">Ngày Sinh</div>
+        <div class="col-4"><input class="form-control" type="date"[(ngModel)]="thisinh.ngaySinh"><span *ngIf="invalid" class="help-block">*Required.</span></div>
+        <div class="col-2">Quê Quán</div>
+        <div class="col-4">
+          <select class="form-control" [(ngModel)]="this.thisinh.queQuan"> 
+          <option  value="An Giang" selected>An Giang</option>
+          <option value="Bà Rịa - Vũng Tàu">Bà Rịa-Vũng Tàu</option>
+          <option value="Bắc Giang">Bắc Giang</option>
+          <option value="Bắc Kạn">Bắc Kạn</option>
+          <option value="Bạc Liêu">Bạc Liêu</option>
+          <option value="Bắc Ninh">Bắc Ninh</option>
+          <option value="Bến Tre">Bến Tre</option>
+          <option value="Bình Định">Bình Định</option>
+          <option value="Bình Dương">Bình Dương</option>
+          <option value="Bình Phước">Bình Phước</option>
+          <option value="Bình Thuận">Bình Thuận</option>
+          <option value="Bình Thuận">Bình Thuận</option>
+          <option value="Cà Mau">Cà Mau</option>
+          <option value="Cao Bằng">Cao Bằng</option>
+          <option value="Đắk Lắk">Đắk Lắk</option>
+          <option value="Đắk Nông">Đắk Nông</option>
+          <option value="Điện Biên"	>Điện Biên</option>
+          <option value="Đồng Nai">Đồng Nai</option>
+          <option value="Đồng Tháp">Đồng Tháp</option>
+          <option value="Gia Lai">Gia Lai</option>
+          <option value="Hà Giang">Hà Giang</option>
+          <option value="Hà Nam">Hà Nam</option>
+          <option value="Hà Tĩnh">Hà Tĩnh</option>
+          <option value="Hải Dương">Hải Dương</option>
+          <option value="Hậu Giang">Hậu Giang</option>
+          <option value="Hòa Bình">Hòa Bình</option>
+          <option value="Hưng Yên">Hưng Yên</option>
+          <option value="Khánh Hòa">Khánh Hòa</option>
+          <option value="Kiên Giang">Kiên Giang</option>
+          <option value="Kon Tum">Kon Tum</option>
+          <option value="Lai Châu">Lai Châu</option>
+          <option value="Lâm Đồng">Lâm Đồng</option>
+          <option value="Lạng Sơn">Lạng Sơn</option>
+          <option value="Lào Cai">Lào Cai</option>
+          <option value="Long An">Long An</option>
+          <option value="Nam Định">Nam Định</option>
+          <option value="Nghệ An">Nghệ An</option>
+          <option value="Ninh Bình">Ninh Bình</option>
+          <option value="Ninh Thuận">Ninh Thuận</option>
+          <option value="Phú Thọ">Phú Thọ</option>
+          <option value="Quảng Bình">Quảng Bình</option>
+          <option value="Quảng Ngãi">Quảng Ngãi</option>
+          <option value="Quảng Ninh">Quảng Ninh</option>
+          <option value="Quảng Trị">Quảng Trị</option>
+          <option value="Sóc Trăng">Sóc Trăng</option>
+          <option value="Sơn La">Sơn La</option>
+          <option value="Tây Ninh">Tây Ninh</option>
+          <option value="Thái Bình">Thái Bình</option>
+          <option value="Thái Nguyên">Thái Nguyên</option>
+          <option value="Thanh Hóa">Thanh Hóa</option>
+          <option value="Thừa Thiên Huế">Thừa Thiên Huế</option>
+          <option value="Tiền Giang">Tiền Giang</option>
+          <option value="Trà Vinh">Trà Vinh</option>
+          <option value="Tuyên Quang">Tuyên Quang</option>
+          <option value="Vĩnh Long">Vĩnh Long</option>
+          <option value="Vĩnh Phúc">Vĩnh Phúc</option>
+          <option value="Yên Bái">Yên Bái</option>
+          <option value="Phú Yên">Phú Yên</option>
+          <option value="TP.Cần Thơ">TP.Cần Thơ</option>
+          <option value="TP.Đà Nẵng">TP.Đà Nẵng</option>
+          <option value="TP.Hải Phòng">TP.Hải Phòng</option>
+          <option value="TP.Hà Nội">TP.Hà Nội</option>
+          <option value="TP HCM">TP HCM</option>        </select><span *ngIf="invalid" class="help-block">*Required.</span>
+        </div>
+        </div>
+        <br/>
+        <div class="row">
+        <div class="col-2">Giới Tính</div>
+        <div class="col-4"><select class="form-control" [(ngModel)]="thisinh.gioiTinh">
+          <option *ngFor="let option of optionsGT" [value]="option" >{{option}}</option>
+        </select><span *ngIf="invalid" class="help-block">*Required.</span></div>
+        <div class="col-2">Khối Thi</div>
+        <div class="col-4" ><select class="form-control" [(ngModel)]="thisinh.khoiThi">
+          <option *ngFor="let option of optionsKT" [value]="option" >{{option}}</option>
+        </select><span *ngIf="invalid" class="help-block">*Required.</span></div>
+        </div>
+        
+    </div>
+  
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="searchThisinh()">Close</button>
+          <button type="button" class="btn btn-primary" *ngIf="isEdit" (click)="updateThisinh()">Save</button>
+          <button type="button" class="btn btn-success" *ngIf="!isEdit" (click)="addThisinh()">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>

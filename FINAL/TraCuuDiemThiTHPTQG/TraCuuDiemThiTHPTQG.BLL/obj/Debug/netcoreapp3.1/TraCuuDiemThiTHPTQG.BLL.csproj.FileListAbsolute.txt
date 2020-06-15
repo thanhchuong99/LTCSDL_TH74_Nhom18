@@ -1,0 +1,22 @@
+D:\Document\SQL Server Management Studio\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\bin\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.BLL.deps.json
+D:\Document\SQL Server Management Studio\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\bin\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.BLL.dll
+D:\Document\SQL Server Management Studio\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\obj\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.BLL.csprojAssemblyReference.cache
+D:\Document\SQL Server Management Studio\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\obj\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.BLL.AssemblyInfoInputs.cache
+D:\Document\SQL Server Management Studio\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\obj\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.BLL.AssemblyInfo.cs
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\bin\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.BLL.deps.json
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\bin\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.BLL.runtimeconfig.json
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\bin\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.BLL.runtimeconfig.dev.json
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\bin\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.BLL.dll
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\bin\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.BLL.pdb
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\bin\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.Common.dll
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\bin\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.DAL.dll
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\bin\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.Common.pdb
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\bin\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.DAL.pdb
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\obj\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.BLL.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\obj\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.BLL.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\obj\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.BLL.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\obj\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.BLL.AssemblyInfo.cs
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\obj\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.BLL.csproj.CopyComplete
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\obj\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.BLL.dll
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\obj\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.BLL.pdb
+C:\Users\admin\Desktop\Project_LTCSDL\BackEnd\TraCuuDiemThiTHPTQG\TraCuuDiemThiTHPTQG.BLL\obj\Debug\netcoreapp3.1\TraCuuDiemThiTHPTQG.BLL.genruntimeconfig.cache
