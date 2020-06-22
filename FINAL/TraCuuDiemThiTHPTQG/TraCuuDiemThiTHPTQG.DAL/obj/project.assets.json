@@ -5095,11 +5095,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\BackEnd\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.DAL\\TraCuuDiemThiTHPTQG.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\FINAL\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.DAL\\TraCuuDiemThiTHPTQG.DAL.csproj",
       "projectName": "TraCuuDiemThiTHPTQG.DAL",
-      "projectPath": "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\BackEnd\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.DAL\\TraCuuDiemThiTHPTQG.DAL.csproj",
+      "projectPath": "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\FINAL\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.DAL\\TraCuuDiemThiTHPTQG.DAL.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\BackEnd\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.DAL\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\FINAL\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5115,8 +5115,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\BackEnd\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.Common\\TraCuuDiemThiTHPTQG.Common.csproj": {
-              "projectPath": "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\BackEnd\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.Common\\TraCuuDiemThiTHPTQG.Common.csproj"
+            "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\FINAL\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.Common\\TraCuuDiemThiTHPTQG.Common.csproj": {
+              "projectPath": "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\FINAL\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.Common\\TraCuuDiemThiTHPTQG.Common.csproj"
             }
           }
         }

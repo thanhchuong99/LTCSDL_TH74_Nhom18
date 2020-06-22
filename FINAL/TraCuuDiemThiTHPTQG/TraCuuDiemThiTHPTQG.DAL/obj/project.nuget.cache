@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5VoJm7R8coZQV3QtxE+60GHj2f+CJ4Cn5Qnefawz3825Lq5ZpJPgrGDwfJYarDTQiwTh5Ud0ySIofvZD3O20fg==",
+  "dgSpecHash": "0Hg3asjpLezO+BHZbdT+KIYqi8c/iTs8W6/0sKtcfBB+R+nc84ujm5U55/AsIPpdXlO0+Yh1X7qiXqL6pZvdBg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\BackEnd\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.DAL\\TraCuuDiemThiTHPTQG.DAL.csproj",
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\FINAL\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.DAL\\TraCuuDiemThiTHPTQG.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.4\\microsoft.aspnetcore.cryptography.internal.3.1.4.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.4\\microsoft.aspnetcore.cryptography.keyderivation.3.1.4.nupkg.sha512",

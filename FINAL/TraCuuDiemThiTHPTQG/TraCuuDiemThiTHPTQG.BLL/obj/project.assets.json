@@ -5116,11 +5116,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\BackEnd\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.BLL\\TraCuuDiemThiTHPTQG.BLL.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\FINAL\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.BLL\\TraCuuDiemThiTHPTQG.BLL.csproj",
       "projectName": "TraCuuDiemThiTHPTQG.BLL",
-      "projectPath": "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\BackEnd\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.BLL\\TraCuuDiemThiTHPTQG.BLL.csproj",
+      "projectPath": "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\FINAL\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.BLL\\TraCuuDiemThiTHPTQG.BLL.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\BackEnd\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.BLL\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\FINAL\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5136,11 +5136,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\BackEnd\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.Common\\TraCuuDiemThiTHPTQG.Common.csproj": {
-              "projectPath": "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\BackEnd\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.Common\\TraCuuDiemThiTHPTQG.Common.csproj"
+            "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\FINAL\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.Common\\TraCuuDiemThiTHPTQG.Common.csproj": {
+              "projectPath": "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\FINAL\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.Common\\TraCuuDiemThiTHPTQG.Common.csproj"
             },
-            "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\BackEnd\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.DAL\\TraCuuDiemThiTHPTQG.DAL.csproj": {
-              "projectPath": "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\BackEnd\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.DAL\\TraCuuDiemThiTHPTQG.DAL.csproj"
+            "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\FINAL\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.DAL\\TraCuuDiemThiTHPTQG.DAL.csproj": {
+              "projectPath": "C:\\Users\\admin\\Desktop\\Project_LTCSDL\\FINAL\\TraCuuDiemThiTHPTQG\\TraCuuDiemThiTHPTQG.DAL\\TraCuuDiemThiTHPTQG.DAL.csproj"
             }
           }
         }
